@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  color: #1a1a2e;
+  background: #f6f6fb;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 64px 24px 56px;
+  background: linear-gradient(135deg, #5b64ed 0%, #8b90f2 100%);
+  color: #fff;
+}
+
+.agent-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #5b64ed;
+  background: #ffffff;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.avatar {
+  width: 88px;
+  height: 88px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #5b64ed;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.name {
+  margin: 0 0 6px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.role {
+  margin: 0 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #e6e7ff;
+}
+
+.intro {
+  margin: 0 0 28px;
+  max-width: 440px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #f0f0ff;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+}
+
+.link-btn {
+  padding: 10px 24px;
+  border-radius: 999px;
+  background: #1a1a2e;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.link-btn:hover {
+  opacity: 0.85;
+}
+
+/* Content */
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px 24px;
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.section-title {
+  margin: 0 0 20px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9a9db8;
+}
+
+/* Tech stack */
+
+.stack-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.stack-group {
+  background: #fff;
+  border: 1px solid #eaeaf5;
+  border-radius: 16px;
+  padding: 18px 20px;
+}
+
+.stack-group-title {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.stack {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.stack li {
+  font-size: 12px;
+  font-weight: 600;
+  color: #5b64ed;
+  background: #eef0fe;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+/* Projects */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #eaeaf5;
+  border-radius: 16px;
+  padding: 22px 22px 20px;
+  box-shadow: 0 8px 24px rgba(26, 26, 46, 0.04);
+}
+
+.project-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.project-emoji {
+  font-size: 18px;
+}
+
+.project-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.project-tag {
+  margin-left: auto;
+  font-size: 10px;
+  font-weight: 700;
+  color: #5b64ed;
+  background: #eef0fe;
+  padding: 3px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.project-sub {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b6f8a;
+}
+
+.project-desc {
+  margin: 0 0 14px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.project-role {
+  margin: 0 0 14px;
+  padding-left: 18px;
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.project-stack {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-stack li {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b6f8a;
+  background: #f0f0f7;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.project-links {
+  display: flex;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.project-links a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #5b64ed;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+  color: #9a9db8;
+}
